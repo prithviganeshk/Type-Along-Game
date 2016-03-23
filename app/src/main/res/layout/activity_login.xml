@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/hydro_background"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="lab3.cis542.upenn.edu.typinggame.TypingGame">
+
+
+    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/message" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="USER NAME"
+        android:id="@+id/UserNamedisplay"
+        android:layout_toStartOf="@+id/message"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/message" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/UserTypeText"
+        android:layout_alignTop="@+id/UserNamedisplay"
+        android:layout_toRightOf="@+id/UserNamedisplay"
+        android:layout_toEndOf="@+id/UserNamedisplay"
+        android:layout_marginLeft="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:id="@+id/login_button"
+        android:layout_toStartOf="@+id/UserTypeText"
+        android:layout_alignTop="@+id/cancel_button"
+        android:layout_toLeftOf="@+id/UserTypeText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLEAR"
+        android:id="@+id/cancel_button"
+        android:layout_toEndOf="@+id/logout_button"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/UserTypeText"
+        android:layout_alignLeft="@+id/quit_button"
+        android:layout_alignStart="@+id/quit_button"
+        android:layout_alignRight="@+id/UserTypeText"
+        android:layout_alignEnd="@+id/UserTypeText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUIT"
+        android:id="@+id/quit_button"
+        android:layout_toEndOf="@+id/new_user"
+        android:layout_alignBottom="@+id/scores_button"
+        android:layout_alignRight="@+id/UserTypeText"
+        android:layout_alignEnd="@+id/UserTypeText"
+        android:layout_toRightOf="@+id/new_user"
+        android:layout_alignTop="@+id/scores_button" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_user"
+        android:layout_above="@+id/UserNamedisplay"
+        android:layout_toStartOf="@+id/UserTypeText"
+        android:layout_marginBottom="63dp"
+        android:layout_alignLeft="@+id/UserNamedisplay"
+        android:layout_alignStart="@+id/UserNamedisplay"
+        android:text="Double click here to sign up"
+        android:layout_alignRight="@+id/message"
+        android:layout_alignEnd="@+id/message" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:id="@+id/singup_button"
+        android:layout_toEndOf="@+id/message"
+        android:layout_alignBottom="@+id/new_user"
+        android:layout_alignRight="@+id/UserTypeText"
+        android:layout_alignEnd="@+id/UserTypeText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
+        android:id="@+id/logout_button"
+        android:layout_below="@+id/cancel_button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCORES"
+        android:id="@+id/scores_button"
+        android:layout_toStartOf="@+id/cancel_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/UserNamedisplay"
+        android:layout_alignEnd="@+id/UserNamedisplay" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="LOGGED IN USER"
+        android:id="@+id/loggedin_user"
+        android:layout_above="@+id/UserNamedisplay"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

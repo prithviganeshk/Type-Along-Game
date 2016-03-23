@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TypingGame</string>
+    <string name="hello_world">THE TYPING GAME</string>
+    <string name="action_settings">Settings</string>
+    <string name="SubmitButton">"Submit Button"</string>
+    <string name="yeah">Yeah!!</string>
+    <string name="yes">Yes</string>
+    <string name="title_activity_login">TypingGame</string>
+    <string name="title_activity_scores">Scores</string>
+    <string name="scores">SCORES</string>
+    <string name="back">BACK</string>
+    <string name="hscore">YOUR HIGHEST SCORE IS</string>
+    <string name="zero">0</string>
+
+
+</resources>
